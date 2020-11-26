@@ -1,25 +1,23 @@
 <template>
     <div class="main-content">
-        <div class="header-area">
-            Welcome to my professional site
-        </div>
+        <TopMenu>
+        </TopMenu>
         <div>Coming soon...</div>
         <div class="footer-area">
-            This site was created with Vue JS and not a whole lot else
+            This site was created with Vue JS and Typescript.
         </div>
 
     </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import TopMenu from "./TopMenu.vue";
 
-@Component
+
+@Component({components: {TopMenu}})
 export default class Main extends Vue {}
 </script>
 <style>
-.header-area {
-    margin: 1em;
-}
 .footer-area {
     margin: 1em;
 }
