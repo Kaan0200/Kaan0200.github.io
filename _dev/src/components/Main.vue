@@ -1,8 +1,7 @@
 <template>
     <div class="main-content">
-        <div class="header-area">
-            Welcome to my professional site
-        </div>
+        <TopMenu>
+        </TopMenu>
         <div class="abilities">
             <div class="section">
                  <div style="font-size: 100px;">
@@ -37,11 +36,14 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import TopMenu from "./TopMenu.vue";
 
-@Component
+
+@Component({components: {TopMenu}})
 export default class Main extends Vue {}
 </script>
 <style>
+<<<<<<< HEAD
 .abilities {
     display: flex;
     align-content: center;
@@ -53,6 +55,8 @@ export default class Main extends Vue {}
 .header-area {
     margin: 1em;
 }
+=======
+>>>>>>> 52bbbd786a7a45e010134865ff9ea6e76b085462
 .footer-area {
     margin: 1em;
 }
