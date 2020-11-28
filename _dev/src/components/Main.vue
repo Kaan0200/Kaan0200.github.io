@@ -8,7 +8,7 @@
                     <i class='bx bxs-category-alt'></i>
                 </div>
                 <div>
-                    I understand a wide veriaty of technologies, topics, and skills.
+                    I understand a wide variety of technologies, topics, and skills. Ranging from everything like art, music, and of course programming!
                 </div>
             </div>
             <div class="section">
@@ -43,7 +43,6 @@ import TopMenu from "./TopMenu.vue";
 export default class Main extends Vue {}
 </script>
 <style>
-<<<<<<< HEAD
 .abilities {
     display: flex;
     align-content: center;
@@ -52,11 +51,6 @@ export default class Main extends Vue {}
 .section {
     width: 200px;
 }
-.header-area {
-    margin: 1em;
-}
-=======
->>>>>>> 52bbbd786a7a45e010134865ff9ea6e76b085462
 .footer-area {
     margin: 1em;
 }
