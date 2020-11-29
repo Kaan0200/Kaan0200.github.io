@@ -28,18 +28,15 @@
                 </div>
             </div>
         </div>
-        <div class="footer-area">
-            This site was created with Vue JS and written, styled, and designed by Alan Atesoglu
-        </div>
-
+        <Footer />
     </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import TopMenu from "./TopMenu.vue";
+import Footer from "./Footer.vue";
 
-
-@Component({components: {TopMenu}})
+@Component({components: {TopMenu, Footer}})
 export default class Main extends Vue {}
 </script>
 <style>
@@ -51,10 +48,6 @@ export default class Main extends Vue {}
 .section {
     width: 200px;
 }
-.footer-area {
-    margin: 1em;
-}
-
 .main-content {
     display: grid;
     height: 100vh;
