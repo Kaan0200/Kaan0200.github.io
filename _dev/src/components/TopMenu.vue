@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="topmenu-wrapper">
         <div class="content">
             <div>Welcome</div>
              <Spacer/>
@@ -12,7 +12,7 @@
     </div>
 </template>
 <style>
-.wrapper {
+.topmenu-wrapper {
     padding: 1em;
     border-bottom: 1px solid black;
     box-shadow: 0 0 1em black;
@@ -25,7 +25,7 @@
 </style>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Spacer from "./utilities/spacer.vue";
+import Spacer from "./Controls+Utils/spacer.vue";
 
 @Component({components: {Spacer}})
 export default class TopMenu extends Vue {}
