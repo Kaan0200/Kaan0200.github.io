@@ -1,19 +1,23 @@
 <template>
     <div class="wrapper">
         <div class="content">
-            <div>Welcome</div>
+            <ClickText>Welcome</ClickText>
              <Spacer/>
-            <div>Skills</div>
+            <ClickText>Skills</ClickText>
             <Spacer/>
-            <div>Links</div>
+            <ClickText>Links</ClickText>
              <Spacer/>
-            <div>Contact</div>
+            <ClickText>Contact</ClickText>
         </div>
     </div>
 </template>
 <style>
 .wrapper {
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+
     border-bottom: 1px solid black;
     box-shadow: 0 0 1em black;
 
@@ -26,8 +30,9 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Spacer from "./utilities/spacer.vue";
+import ClickText from "./utilities/clickText.vue";
 
-@Component({components: {Spacer}})
+@Component({components: {Spacer, ClickText}})
 export default class TopMenu extends Vue {}
 
 </script>
