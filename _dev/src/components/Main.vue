@@ -2,7 +2,7 @@
     <div class="main-content">
         <TopMenu>
         </TopMenu>
-        
+        <ContentArea />
         <Footer />
     </div>
 </template>
@@ -10,6 +10,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import VueRouter, { RouteConfig } from 'vue-router';
 import TopMenu from "./TopMenu.vue";
+import ContentArea from "./ContentArea.vue";
 import Footer from "./Footer.vue";
 import LinksView from "./pages/LinksView.vue";
 import MainView from "./pages/MainView.vue";
@@ -36,14 +37,6 @@ export default class Main extends Vue {
 }
 </script>
 <style>
-.abilities {
-    display: flex;
-    align-content: center;
-    margin: auto;
-}
-.section {
-    width: 200px;
-}
 .main-content {
     display: grid;
     height: 100vh;
