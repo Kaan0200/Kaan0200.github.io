@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kaan0200.github.io</title>
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <script type="module" src="/src/elements/app-shell.ts"></script>
+    <script type="module" src="/src/elements/my-element.ts"></script>
+    <script type="module" src="/src/global.ts"></script>
   </head>
   <body>
-    <my-element>
-      <h1>Get started</h1>
-    </my-element>
+    <app-shell>
+      <my-element>
+        <h1>Get started</h1>
+      </my-element>
+
+      <project-card linkto="/setstax">Set Stax - An angular project that is a cloud "set" or playlist for dj mixing.</project-card>
+      <project-card linkto="/undrtow">Undrtow - A browser extension designed to connect electronic stores with streaming services so you can listen with one and browse with the other.</project-card>
+      <project-card>rhoob - A tauri native app that is a local digital musical library management tool.</project-card>
+    </app-shell>
   </body>
 </html>

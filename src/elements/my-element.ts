@@ -1,8 +1,8 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, css, html, type TemplateResult } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import litLogo from './assets/lit.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import litLogo from '../assets/lit.svg'
+import viteLogo from '../assets/vite.svg'
+import heroImg from '../assets/hero.png'
 
 /**
  * An example element.
@@ -18,7 +18,7 @@ export class MyElement extends LitElement {
   @property({ type: Number })
   count = 0
 
-  render() {
+  render(): TemplateResult {
     return html`
       <section id="center">
         <div class="hero">
@@ -426,8 +426,3 @@ export class MyElement extends LitElement {
   `
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    'my-element': MyElement
-  }
-}
