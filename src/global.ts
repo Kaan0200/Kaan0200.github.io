@@ -1,32 +1,11 @@
-import { customElement, property } from "lit/decorators.js";
-import type { MyElement } from "./elements/my-element";
-import { css, html, LitElement, type TemplateResult } from 'lit';
+import type { AppShell } from "./app-shell";
+import type { CardGallery } from "./elements/card-gallery";
+import type { ProjectCard } from "./elements/project-card";
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement,
-    'project': ProjectCard,
+    "project-card": ProjectCard;
+    "card-gallery": CardGallery;
+    "app-shell": AppShell;
   }
-}
-
-@customElement('project-card')
-export class ProjectCard extends LitElement {
-
-    @property()
-    public linkto: string = '/';
-
-    render():TemplateResult {
-        return html`
-        <a href=${this.linkto}><slot></slot></a>
-        `
-    }
-
-    static styles = css`
-        a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            cursor: pointer;
-        }
-    `
 }

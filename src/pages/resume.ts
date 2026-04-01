@@ -19,7 +19,7 @@ export class ResumePage extends LitElement {
       margin: 0 auto;
       padding: 2rem;
       color: #6b6375;
-      font-family: system-ui, sans-serif;
+      font-family: 'Barlow', sans-serif;
     }
     @media (prefers-color-scheme: dark) {
       :host { color: #9ca3af; }

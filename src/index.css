@@ -1,4 +1,5 @@
 :root {
+  font-family: 'Barlow', sans-serif;
   color-scheme: light dark;
   background-color: #ffffff;
 }
@@ -21,4 +22,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+
+app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.views {
+  display: flex;
+  margin: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+}
+.profile-desc {
+  max-width: 400px;
 }
