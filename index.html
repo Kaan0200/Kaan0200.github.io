@@ -1,55 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>kaan0200.github.io</title>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/index.css" />
+    <title>kaan0200.github.io</title>
+    <style>
+      body {
+        margin: 0;
+        background: #111;
+      }
+    </style>
     <script type="module" src="/src/app-shell.ts"></script>
-    <script type="module" src="/src/elements/my-element.ts"></script>
-    <script type="module" src="/src/elements/card-gallery.ts"></script>
-    <script type="module" src="/src/elements/project-card.ts"></script>
-    <script type="module" src="/src/global.ts"></script>
   </head>
   <body>
-    <app-shell>
-      <section class="profile">
-        <div>
-          <div class="profile-pic"></div>
-        </div>
-        <div>
-          <h1>
-            A. Kaan A.
-          </h1>
-          <div class="profile-desc">
-            Experienced web full stack, exceptional front-end development,
-            knowledgeable dev-ops management, with a passion of DJing and 
-            building applicable solutions that help real people.
-          </div>
-        </div>
-      </section>
-      <section class="views">
-        <h4>
-          <a>Projects</a> | <a>Experience</a> | <a>Contact</a>
-      </section>
-      <section>
-        <card-gallery>
-          <project-card title="Set Stax" linkto="/setstax">
-            Cloud App for building playlist or dj sets.
-          </project-card>
-          <project-card title="Undrtow" linkto="/undrtow">
-            Browser extension that connects electronic stores with streaming services so you can listen with one and browse with the other.</project-card>
-          <project-card title="Rhoob" linkto="/rhoob">
-            Native App built with 'beets' that is a local digital musical library management tool.
-          </project-card>
-          <project-card title="Digital Horizons" linkto="/dh">
-            A fun, interactive, musical discovery app to listen to my dj mixes.
-          </project-card>
-          <project-card title="Demo Game" linkto="/game">
-            A full fledged video game build with typescript and webgl.
-        </card-gallery>
-      </section>
-    </app-shell>
+    <app-shell></app-shell>
   </body>
 </html>
